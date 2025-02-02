@@ -61,8 +61,8 @@ nano setup.yml
 
 ## 4. Create  inventory.ini file
     nano inventory.ini
-
-      [web_servers]
+[web_servers]
+      
 your-server-ip ansible_user=ubuntu
 
 [Replace your-server-ip with actual ip adderess]
