@@ -81,4 +81,6 @@ your-server-ip ansible_user=ubuntu
   Open your browser and visit:
 
   http://your-server-ip
+
+  ![staticwebsite](image.png).
   
