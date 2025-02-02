@@ -66,6 +66,7 @@ nano inventory.ini
       
 your-server-ip ansible_user=ubuntu
 
+
 [Replace your-server-ip with actual ip adderess]
 
 ## 5. Run the Ansible Playbook
