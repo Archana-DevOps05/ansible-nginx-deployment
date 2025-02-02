@@ -60,8 +60,8 @@ nano setup.yml
         state: restarted
 
 ## 4. Create  inventory.ini file
-    nano inventory.ini
-[web_servers]
+nano inventory.ini
+    [web_servers]
       
 your-server-ip ansible_user=ubuntu
 
