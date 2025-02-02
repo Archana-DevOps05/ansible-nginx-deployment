@@ -1,0 +1,26 @@
+- name: Setup Nginx Web Server
+  hosts: web_servers
+  become: yes  # Run as root
+  tasks:
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+      when: ansible_os_family == "Debian"
+
+    - name: Start and Enable Nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Deploy a Sample Web Page
+      copy:
+        dest: /var/www/html/index.html
+        content: "<h1>Welcome to  Ansible Automated Server!</h1>"
+
+    - name: Restart Nginx
+      service:
+        name: nginx
+        state: restarted
